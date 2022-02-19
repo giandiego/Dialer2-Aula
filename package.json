@@ -21,6 +21,7 @@
     "@babel/runtime": "^7.13.10"
   },
   "dependencies": {
+    "asterisk-manager": "^0.2.0",
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
     "cuid": "^2.1.8",

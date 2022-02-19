@@ -1,3 +1,5 @@
+#Para instalar nodejs en centos 7 hacer lo siguiente:
+
 yum update -y
 yum  -y install epel-release
 

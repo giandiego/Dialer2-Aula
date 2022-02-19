@@ -3,6 +3,7 @@ import morgan from "morgan";
 import cors from "cors";
 import config from "./config";
 import ApiBase from "./routes/apibase.routes";
+import Asterisk from "./routes/asterisk.routes";
 import Auth from "./routes/auth.routes";
 
 // Constantes
@@ -82,6 +83,7 @@ app.get("/", (req, res) => {
 
 app.use("/api/v1/Authorization", Auth);
 app.use("/api/v1/ApiBase", ApiBase);
+app.use("/api/v1/Manager", Asterisk);
 
 app.use((err, req, res, next) => {
   if (err instanceof SyntaxError && err.status === 400 && "body" in err) {

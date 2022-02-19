@@ -11,6 +11,12 @@ CERT =  /etc/letsencrypt/live/${DOMAIN}/cert.pem
 MONGODB_DB = apibaseTest
 MONGODB_URI = mongodb://localhost/${MONGODB_DB}?retryWrites=true
 
+# Asterisk manager interface
+AMI_HOST = localhost
+AMI_USER = user
+AMI_PASS = password
+AMI_PORT = 5038
+
 # Token
 USER_NAME = Api Base
 EMAIL = api.auth@apibase.com

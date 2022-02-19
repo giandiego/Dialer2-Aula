@@ -28,7 +28,7 @@ export const Authorization = async (req, res) => {
 };
 
 export const LogoutUser = async (req, res) => {
-  //Inicia sesión de un usuario registrado
+  //Cierra sesión de un usuario registrado
   try {
       req.user.tokens = req.user.tokens.filter((token) => {   // filtramos la matriz de tokens del usuario -> 
       return token.token != req.token                     // devolvemos true si alguno de los tokens no es igual al token que utilizó el usuario para iniciar sesión -> El arreglo filter method crea una nuevo arreglo con todos los elementos que pasan la prueba implementada. En nuestro caso anterior, el método de filtro devolverá un nuevo arreglo que contiene cualquier otro token aparte del que se usó para iniciar sesión

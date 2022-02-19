@@ -1,26 +1,26 @@
 # @name login 
 
-@url =http://localhost:4500
+@url =http://localhost:4001
 
 POST {{url}}/api/v1/Authorization/
 Content-Type: application/json
 
 {
-  "email": "dialer.auth@test.com",
-  "password": "pastest*!"
+  "email": "api.auth@apibase.com",
+  "password": "ApiBase2021*!"
 }
 
 ###
 @jwtoken = {{login.response.body.token}}
 
 ### StatusDialer // para validar Authorization
-POST {{url}}/api/v1/prog/Status
+POST {{url}}/api/v1/ApiBase/StatusApiBase
 Content-Type: application/json
 Authorization: Bearer {{jwtoken}}
 
 {
   "Action": "StatusDialer",
-  "campaignid":"601604e43a8fa12958d9cf18",
+  "Data":"601604e43a8fa12958d9cf18",
   "_id": "601604e43a8fa12958d9cd34"
 }
 

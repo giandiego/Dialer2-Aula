@@ -12,7 +12,7 @@ Frontend application.
 
 # Endpoints
 
-[Doc](https://github.com/giandiego/api-base-mongo-jwt/blob/main/requests/prog.http)
+[Doc](https://github.com/giandiego/Dialer2-Aula/blob/main/requests/prog.http)
 
 # Install
 
@@ -52,17 +52,17 @@ sudo systemctl status mongod
 Clone project
 ```
 cd /opt/
-git clone https://github.com/giandiego/api-base-mongo-jwt.git
+git clone https://github.com/giandiego/Dialer2-Aula.git
 ```
 
-Edit enviroment variables in /opt/api-base-mongo-jwt/ (changues values)
+Edit enviroment variables in /opt/Dialer2-Aula/ (changues values)
 ```
 cp env-example .env
 ```
 
 Install Dependencies
 ```
-cd /opt/api-base-mongo-jwt/
+cd /opt/Dialer2-Aula/
 npm install --force
 npm run build
 ```
@@ -80,9 +80,9 @@ npm run dev
 
 Init pm2
 ```
-cd /opt/api-base-mongo-jwt/
+cd /opt/Dialer2-Aula/
 npm run build
-pm2 start dist/index.js --name api-base-mongo-jwt --time
+pm2 start dist/index.js --name Dialer2-Aula --time
 pm2 startup
 ```
 Remove init script via:

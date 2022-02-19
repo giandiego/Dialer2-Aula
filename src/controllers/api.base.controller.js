@@ -4,7 +4,7 @@ export const StatusApiBase = async (req, res) => {
     const s = req.body,
       i = s.Data;
     
-    if (!i){
+    if (!i || s.Action !== 'StatusApiBase') {
       throw new Error("Arguments are missing in your query.");
     }
 
